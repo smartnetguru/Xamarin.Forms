@@ -1,14 +1,11 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-#if __UNIFIED__
-using UIKit;
 
-#else
-using MonoTouch.UIKit;
-#endif
-
+#if __MOBILE__
 namespace Xamarin.Forms.Platform.iOS
+#else
+namespace Xamarin.Forms.Platform.MacOS
+#endif
 {
 	public sealed class RendererPool
 	{
