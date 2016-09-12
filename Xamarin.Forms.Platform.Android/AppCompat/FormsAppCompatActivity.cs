@@ -490,7 +490,7 @@ namespace Xamarin.Forms.Platform.Android
 #pragma warning disable 612, 618
 			SetProgressBarIndeterminate(true);
 			SetProgressBarIndeterminateVisibility(isBusy);
-#pragma warning disable 612, 618
+#pragma warning restore 612, 618
 		}
 
 		internal class DefaultApplication : Application
